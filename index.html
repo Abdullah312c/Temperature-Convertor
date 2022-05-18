@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>degrees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Temperature Convertor</h1>
+        <div id="input">
+            <h1>Enter a temperature</h1>
+            <h2>Enter the unit</h2>
+            <input type="radio" name="inputDegree" id="inputC" checked="checked">
+            <label for="inputC" class="radioLabel">Celsius</label>
+            <input type="radio" name="inputDegree" id="inputK">
+            <label for="inputK" class="radioLabel">Kelvin</label>
+            <input type="radio" name="inputDegree" id="inputF">
+            <label for="inputF" class="radioLabel">Fahrenheit</label>
+            <input type="radio" name="inputDegree" id="inputR">
+            <label for="inputR" class="radioLabel">Rankine</label><br><br>
+            <label for="">The temperature</label>
+            <input type="text" placeholder="0" id="inputDegree">
+        </div>
+        <button type="button" id="btn">convert</button>
+        <div id="output">
+            <h1>Output temperature</h1>
+            <h2>Enter the unit</h2>
+            <input type="radio" name="outputDegree" id="outputC" checked="checked">
+            <label for="outputC" class="radioLabel">Celsius</label>
+            <input type="radio" name="outputDegree" id="outputK">
+            <label for="outputK" class="radioLabel">Kelvin</label>
+            <input type="radio" name="outputDegree" id="outputF">
+            <label for="outputF" class="radioLabel">Fahrenheit</label>
+            <input type="radio" name="outputDegree" id="outputR">
+            <label for="outputR" class="radioLabel">Rankine</label><br><br>
+            <label for="" id="display">The temperature</label>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

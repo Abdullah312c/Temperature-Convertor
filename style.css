@@ -1,0 +1,130 @@
+body {
+    text-align: center;
+    font-family: "MV Boli", cursive;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    color: lightgreen;
+}
+
+#container {
+    margin-left: -1.5rem;
+    border: 2px solid #222222;
+    width: fit-content;
+    background-color: #222222;
+}
+
+#input {
+    margin-top: 1rem;
+    padding: 0 1rem 1rem;
+    background-color: #fcfc03;
+}
+
+#title::selection {
+    color: black;
+    background-color: lightgreen;
+}
+
+#btn::selection {
+    color: lightgreen;
+    background-color: black;
+}
+
+#input label::selection,
+#input h1::selection,
+#input h2::selection {
+    color: yellow;
+    background: black;
+}
+
+#output label::selection,
+#output h1::selection,
+#output h2::selection {
+    color: red;
+    background: black;
+}
+
+[type="text"] {
+    font-family: "MV Boli", cursive;;
+}
+
+#output {
+    padding: 0 1rem 1rem;
+    background-color: #ed2b3b;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+#btn {
+    margin-top: 1.7rem;
+    background-color: lightgreen;
+    font-family: "MV Boli", cursive;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: 3px solid;
+    cursor: pointer;
+    transition: .4s background-color;
+}
+
+#btn:hover {
+    background-color: green;
+}
+
+#inputDegree {
+    font-size: 1rem;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background:
+      linear-gradient(90deg, #222, #222) center bottom/0 0.15em no-repeat,
+      linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat,
+      linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+    transition: background-size 0.8s ease;
+  }
+  
+  #inputDegree:focus {
+    background-size: 100% 0.15em, 100% 0.1em, 100%;
+  }
+
+ [type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+ }
+
+ [class="radioLabel"] {
+     position: relative;
+     padding-left: 1.5rem;
+ }
+
+ [class="radioLabel"]::before {
+     content: '';
+     width: 16px;
+     height: 16px;
+     border: 1px solid;
+     position: absolute;
+     left: 0;
+     top: 50%;
+     transform: translateY(-50%);
+     background: white;
+     border-radius: 50%;
+ }
+
+ input[type="radio"]:checked +label::after,
+ input[type="radio"]:not(:checked):hover +label::after {
+     content: '';
+     background-color: black;
+     width: 10px;
+     height: 10px;
+     position: absolute;
+     left: 4px;
+     top: 10px;
+     transition: .5s ease;
+     border-radius: 50%;
+ }
+ input[type="radio"]:not(:checked):hover +label::after {
+     opacity: .2;
+ }
